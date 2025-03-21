@@ -96,7 +96,7 @@ tl2.from(
 tl2.to(
     '#orange-cut',
     {
-        left:'41%',
+        left:'40%',
         top: '209%',
         width: '20%',
     },
@@ -106,7 +106,7 @@ tl2.to(
 tl2.to(
     '#fanta',
     {
-        left:'37%',
+        left:'36.9%',
         top: '227%',
         width: '25%',
     },
