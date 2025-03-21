@@ -97,8 +97,8 @@ tl2.to(
     '#orange-cut',
     {
         left:'41%',
-        top: '211%',
-        width: '320px',
+        top: '209%',
+        width: '20%',
     },
     'coca',
 );
