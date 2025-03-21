@@ -73,6 +73,7 @@ body::-webkit-scrollbar{
     position: absolute;
     width: 40%;
     z-index: 2;
+    object-fit: cover;
 }
 #orange-cut{
     position: absolute;
@@ -148,6 +149,7 @@ body::-webkit-scrollbar{
     position: absolute;
     margin: 40vh;
     right: 75vh;
+    object-fit: cover;
 
 }
 
@@ -208,6 +210,9 @@ body::-webkit-scrollbar{
     top: 6%;
     left: 50%;
     transform: translate(-50%,0%);
+    object-fit: cover;
+    height: auto;
+
 }
 .lemon.lemon1{
     position: absolute;
@@ -216,4 +221,67 @@ body::-webkit-scrollbar{
     transform: translate(-50%,0%);
     width: 25vw;
     height: auto;
+}
+
+/* Estilo padrão para telas grandes */
+.hero h1 {
+    font-size: 25vw;
+}
+
+.nav-menu {
+    gap: 50px;
+}
+
+.card {
+    width: 25vw;
+}
+
+/* Ajustes para telas médias (tablets) */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 30vw; /* Reduz o tamanho do texto */
+    }
+
+    .nav-menu {
+        gap: 30px; /* Reduz o espaçamento entre os itens do menu */
+    }
+
+    .card {
+        width: 40vw; /* Aumenta a largura dos cards */
+    }
+}
+
+/* Ajustes para telas pequenas (celulares) */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 40vw; /* Torna o texto ainda menor */
+    }
+
+    .nav-container {
+        flex-direction: column; /* Altera o menu para coluna */
+        height: auto; /* Permite altura automática */
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px; /* Reduz o espaçamento entre os itens */
+    }
+
+    .card {
+        width: 80vw; /* Faz os cards ocuparem mais espaço */
+    }
+
+    .two {
+        flex-direction: column; /* Altera o layout para coluna */
+    }
+
+    .rigth-side {
+        position: static; /* Remove posicionamento absoluto */
+        width: 100%;
+        text-align: center;
+    }
+
+    #blob {
+        display: none; /* Oculta a imagem blob em telas pequenas */
+    }
 }
